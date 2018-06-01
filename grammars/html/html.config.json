@@ -1,0 +1,36 @@
+{
+    "id": "html",
+    "grammar": "text.html.basic",
+    "extensions": [".html", ".htm"],
+    "mimeType": ["text/html"],
+	"comments": {
+		"blockComment": [ "<!--", "-->" ]
+	},
+	"brackets": [
+		["<!--", "-->"],
+		["<", ">"],
+		["{", "}"],
+		["(", ")"]
+	],
+	"autoClosingPairs": [
+		{ "open": "{", "close": "}"},
+		{ "open": "[", "close": "]"},
+		{ "open": "(", "close": ")" },
+		{ "open": "'", "close": "'" },
+		{ "open": "\"", "close": "\"" }
+	],
+	"surroundingPairs": [
+		{ "open": "'", "close": "'" },
+		{ "open": "\"", "close": "\"" },
+		{ "open": "{", "close": "}"},
+		{ "open": "[", "close": "]"},
+		{ "open": "(", "close": ")" },
+		{ "open": "<", "close": ">" }
+	],
+	"folding": {
+		"markers": {
+			"start": "^\\s*<!--\\s*#region\\b.*-->",
+			"end": "^^\\s*<!--\\s*#endregion\\b.*-->"
+		}
+	}
+}

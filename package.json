@@ -1,0 +1,36 @@
+{
+    "name": "languages",
+    "version": "1.0.0",
+    "description": "_",
+    "scripts": {
+        "build": "webpack",
+        "watch": "webpack -w",
+        "bake-manifest": "node scripts/bake_manifest.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/NeekSandhu/rink-languages.git"
+    },
+    "author": "Neek Sandhu",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/NeekSandhu/rink-languages/issues"
+    },
+    "homepage": "https://github.com/NeekSandhu/rink-languages#readme",
+    "devDependencies": {
+        "fs-extra": "^5.0.0",
+        "glob": "^7.1.2",
+        "ts-loader": "^2.3.7",
+        "typescript": "^2.7.2",
+        "webpack": "^3.10.0"
+    },
+    "rinkPackageManifest": {
+        "name": "Language Grammars",
+        "modules": {
+            "devtools": "dist/index.js"
+        }
+    },
+    "dependencies": {
+        "path-fx": "^1.4.0"
+    }
+}

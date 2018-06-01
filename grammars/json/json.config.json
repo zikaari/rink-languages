@@ -1,0 +1,33 @@
+{
+    "id": "json",
+    "grammar": "source.json",
+    "extensions": [
+      ".json",
+      ".bowerrc",
+      ".jshintrc",
+      ".jscsrc",
+      ".eslintrc",
+      ".babelrc",
+      ".webmanifest"
+    ],
+    "mimetypes": [
+      "application/json",
+      "application/manifest+json"
+    ],
+	"comments": {
+		"lineComment": "//",
+		"blockComment": [ "/*", "*/" ]
+	},
+	"brackets": [
+		["{", "}"],
+		["[", "]"]
+	],
+	"autoClosingPairs": [
+		{ "open": "{", "close": "}", "notIn": ["string"] },
+		{ "open": "[", "close": "]", "notIn": ["string"] },
+		{ "open": "(", "close": ")", "notIn": ["string"] },
+		{ "open": "'", "close": "'", "notIn": ["string"] },
+		{ "open": "\"", "close": "\"", "notIn": ["string", "comment"] },
+		{ "open": "`", "close": "`", "notIn": ["string", "comment"] }
+	]
+}
